@@ -1,0 +1,9 @@
+theme: 
+  switch: true 
+  default: style-light # style-light style-dark
+
+about:
+  title: 喵帕斯先生   # 标题
+  introduction: 描述 # 个人简单描述
+  blog: 学习博客       # 博客信息
+  privacy: 隐私权是您的重要权利。向我们提供您的个人信息是基于对我们的信任，相信我们会负责的态度对待您的个人信息。我们认为您提供的信息只能用于帮助我们为您提供更好的服务。     # 隐私权说明    
