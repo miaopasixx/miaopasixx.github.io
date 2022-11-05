@@ -104,4 +104,7 @@ theme: async
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'https://github.com/miaopasixx/miaopasixx.github.io.git'
+  type: git 
+  repository: git@github.com:miaopasixx/miaopasixx.github.io.git
+  branch: master
+  
