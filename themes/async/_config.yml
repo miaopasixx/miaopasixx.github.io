@@ -61,9 +61,9 @@ assets:
 # cdn
 cdn:
   css:  
-  js:
-    head:
-    base: 
+  js: 
+    head: 
+    base: https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js
     async: 
     defer: 
 
@@ -144,20 +144,27 @@ sidebar:
     - key: sidebar.age
       val: 28
   social:
+    - name: music
+      icon: fas fa-music
+      url: /music.html
     - name: Github
       icon: fab fa-github
-      url: https://github.com
-    - name: Twitter
-      icon: fab fa-twitter
-      url: https://twitter.com
+      url: https://github.com/miaopasixx/miaopasixx.github.io
+    - name: QQ
+      icon: fab fa-qq
+      url: tencent://message/?uin=1054662124&Site=在线QQ&Menu=yes
+    - name: day
+      icon: fas fa-calendar-day
+      url: /day.html
     - name: Rss  
       icon: fas fa-rss
       url: atom.xml
 
+
 # About page settings
 about:
   title: 如果一切都是镜花水月，那就让这万物走向终结。如果一切皆是命中注定，那就让这世界消失殆尽。
-  introduction: 大家好，我是 <strong>Async</strong>，很高兴您能在浩瀚如烟的互联网世界里发现这个博客，更感谢您能够饶有兴致地浏览这个页面。建立这个 Blog 是出于兴趣爱好，我将在此分会分享一些学习笔记，可能还会分享少许图片、视频以及其他有趣东西的链接。
+  introduction: 大家好，我是 <strong>Mr.miaopasi</strong>，很高兴您能在浩瀚如烟的互联网世界里发现这个博客，更感谢您能够饶有兴致地浏览这个页面。建立这个 Blog 是出于兴趣爱好，我将在此分会分享一些学习笔记，可能还会分享少许图片、视频以及其他有趣东西的链接。
   blog: 
     <ul class="trm-list">
       <li>程序：Hexo </li>
@@ -182,9 +189,9 @@ footer:
   live_time:
     enable: true
     prefix: footer.tips
-    start_time: 04/10/2022 17:00:00
+    start_time: 07/23/2019 17:00:00
   #
-  custom_text:  <span class="tips"><div id="go-fav">更多精彩文章，按<span>Ctrl</span>+<span>D</span>收藏本站！</div></span>
+  custom_text:  <script src="https://api.gmit.vip/Api/YiYan?format=js" type="text/javascript"></script>
 
 # archive
 archive:

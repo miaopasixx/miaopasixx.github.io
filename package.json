@@ -12,8 +12,10 @@
     "version": "6.3.0"
   },
   "dependencies": {
+    "artplayer": "^4.5.10",
     "hexo": "^6.3.0",
     "hexo-admonition": "^1.1.2",
+    "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
@@ -25,6 +27,7 @@
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
+    "hexo-tag-qrcode": "^1.0.0",
     "hexo-theme-async": "^1.2.3",
     "hexo-theme-landscape": "^0.0.3",
     "hexo-wordcount": "^6.0.1"

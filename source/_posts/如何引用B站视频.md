@@ -8,7 +8,8 @@ tags:
 - [哔哩哔哩]
 categories:
 - [视频]
-photos: https://ae01.alicdn.com/kf/Ue845a194dde04704b3e77a135ba1ed39b.jpg
+photos: 
+#https://ae01.alicdn.com/kf/Ue845a194dde04704b3e77a135ba1ed39b.jpg
 ---
 
 ## 【差不多】邓紫棋-视频播放源
