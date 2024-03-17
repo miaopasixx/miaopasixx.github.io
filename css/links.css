@@ -1,0 +1,60 @@
+h2 {
+  text-align: center;
+  margin-top: 80px;
+  color: #333;
+}
+
+h3 {
+  padding-left: 20px;
+  color: var(--color-font-2);;
+}
+
+.links-title span{
+  font-size: 28px; /* 字体大小为28像素 */
+  font-weight: bold; /* 字体加粗 */
+  color: var(--color-font-1); /* 文本颜色为深灰色 */
+  margin-bottom: 10px; /* 底部外边距为10像素 */
+}
+
+.links-title span::after {
+  background: var(--color-primary);
+  content: "";
+  display: block;
+  width: 2%; /* 设置短线的宽度 */
+  height: .3125rem;
+  bottom: -1.0625rem;
+  border-bottom: 1px;
+  border-radius: .5rem;
+  margin: 10px auto; /* 调整短线与文字之间的距离 */
+}
+
+.links {
+  margin: 1%;
+}
+
+.links .title svg {
+  color: var(--color-font-1);
+  height: 28px;
+  width: 28px;
+}
+
+.card {
+  display: inline-block;
+  padding: 24px;
+  text-decoration: none;
+  margin: 1%; /* 设置卡片之间的外边距 */
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    gap: 12px;
+}
+
+.desc {
+    color: var(--color-font-2);
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 12px;
+}

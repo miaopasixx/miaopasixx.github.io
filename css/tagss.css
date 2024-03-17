@@ -1,0 +1,57 @@
+.tag>.content {
+margin: 0 auto;
+max-width: 860px;
+padding: 24px 12px;
+}
+
+h2 {
+text-align: center;
+margin-top: 250px;
+color: #333;
+}
+
+.tag-cloud {
+padding: 20px;
+text-align: center;
+}
+
+.tag-cloud a::before {
+content: "\2022"; /* 使用实心圆点的 unicode 编码 */
+color: var(--color-red);; /* 设置圆点颜色为红色 */
+margin-right: 5px; /* 调整圆点与文字之间的距离 */
+}
+
+.tag-cloud a {
+margin: 5px;
+padding: 8px 15px;
+border-radius: 20px;
+background-color: #2d2e43;
+color: #fff;
+text-decoration: none;
+transition: all 0.3s ease;
+border-radius: 10px;
+}
+
+.tag-cloud a:hover {
+background-color: #2d2e43;
+transform: scale(1.1);
+}
+
+.tag-title span{
+font-size: 28px; /* 字体大小为28像素 */
+font-weight: bold; /* 字体加粗 */
+color: var(--color-font-1); /* 文本颜色为深灰色 */
+margin-bottom: 10px; /* 底部外边距为10像素 */
+}
+
+.tag-title span::after {
+background: var(--color-primary);
+content: "";
+display: block;
+width: 5%; /* 设置短线的宽度 */
+height: .3125rem;
+bottom: -1.0625rem;
+border-bottom: 1px;
+border-radius: .5rem;
+margin: 10px auto; /* 调整短线与文字之间的距离 */
+}
