@@ -55,3 +55,24 @@ border-bottom: 1px;
 border-radius: .5rem;
 margin: 10px auto; /* 调整短线与文字之间的距离 */
 }
+
+/* 手机页面样式 */
+@media (max-width: 767px) {
+    h2 {
+      text-align: center;
+      margin-top: 50px; /* 将 margin-top 改为 50px */
+      color: #333;
+    }
+    .tag-cloud {
+      padding: 10px;
+      max-height: 700px; /* 设置最大高度 */
+      overflow-y: auto; /* 启用垂直滚动 */
+    }
+  
+    .tag-cloud a {
+      display: block;
+      margin: 5px auto;
+      padding: 8px 12px;
+    }
+  }
+  
