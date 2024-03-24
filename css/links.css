@@ -1,0 +1,284 @@
+.vague-icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    padding: 8px;
+    position: relative
+}
+
+.vague-icon:before {
+    background: linear-gradient(90deg, var(--color-primary-3) .04%, var(--color-primary) 46.04%);
+    border-radius: 50%;
+    content: "";
+    filter: blur(5px);
+    height: 50%;
+    left: 50%;
+    opacity: .7;
+    overflow: visible;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%
+}
+
+.links {
+    height: 100%;
+    overflow-y: auto;
+    position: relative
+}
+
+.links .header {
+    margin: 0 auto;
+    max-width: 860px;
+    padding: 24px 24px 0;
+    position: relative
+}
+
+.links .header:before {
+    background: linear-gradient(var(--color-primary) 0, var(--color-primary) 100%);
+    border-radius: 50%;
+    content: "";
+    filter: blur(80px);
+    height: 360px;
+    left: 50%;
+    opacity: .2;
+    pointer-events: none;
+    position: absolute;
+    top: 2%;
+    transform: translateX(-50%);
+    width: 360px
+}
+
+.links .header .about-me p {
+    color: var(--color-font-2);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.links>.content {
+    margin: 0 auto;
+    max-width: 860px;
+    padding: 24px 12px
+}
+
+.links>.content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1rem
+}
+
+.links>.content ul:last-of-type {
+    padding-bottom: 0
+}
+
+.links>.content ul .title {
+    align-items: center;
+    display: flex;
+    margin-bottom: 2.5rem
+}
+
+.links>.content ul .title>span {
+    z-index: 10
+}
+
+.links>.content ul .title>span:after {
+    background: var(--color-border-2);
+    bottom: -2.5rem;
+    content: "";
+    left: 49%;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-47%);
+    width: 1px;
+    z-index: 1
+}
+
+.links>.content ul .title>span svg {
+    color: var(--color-font-1);
+    height: 20px;
+    width: 20px
+}
+
+.links>.content ul .title h4 {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+    padding-left: 1rem
+}
+
+.links>.content ul .item {
+    border-left: 1px solid var(--color-border-2);
+    margin-left: 17px;
+    padding: 0 0 4rem 2rem;
+    position: relative;
+    z-index: 10
+}
+
+.links>.content ul .item:last-of-type {
+    border-left: 0
+}
+
+.links>.content ul .item:before {
+    background: var(--color-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 .25rem var(--color-bg-3);
+    content: "";
+    height: .6rem;
+    left: -.3rem;
+    position: absolute;
+    top: .3rem;
+    width: .6rem
+}
+
+.links>.content ul .item .name {
+    align-items: center;
+    color: var(--color-font);
+    display: flex;
+    font-size: 1rem;
+    margin: 0
+}
+
+.links>.content ul .item .name>label {
+    display: inline-block;
+    height: 20px;
+    margin-right: 12px;
+    vertical-align: middle;
+    width: 20px
+}
+
+.links>.content ul .item .desc {
+    color: var(--color-font-2);
+    line-height: 1.5;
+    margin: 0;
+    padding: .5rem 0 1rem
+}
+
+.links>.content ul .item .list {
+    list-style: square;
+    padding-left: 24px
+}
+
+.links>.content ul .item .list li {
+    line-height: 2;
+    margin-bottom: 1rem
+}
+
+.links>.content .char .name {
+    background: linear-gradient(45deg, var(--color-bg-3), transparent);
+    border-radius: var(--radius-base, 4px) 0 0 var(--radius-base, 4px);
+    padding: .5rem;
+    transform: translateY(-.6rem)
+}
+
+.Rec-card {
+    position: relative;
+    width: calc(100% / 4); 
+    max-width: 100%;
+    height: 130px;
+    background-color: hsl(233deg 33% 36% / 11%);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(137, 146, 155, 0.075);
+    padding: 0.5rem;
+    flex-direction: row;
+    margin: 0 20px 20px; /* 保留20px的margin-right以增加间距 */
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    display: inline-flex;
+    justify-content: flex-start; /* 改为此处，让图像靠左对齐 */
+    align-items: center;
+    border: 1px solid rgba(120, 127, 226, 0.185);
+}
+
+.Rec-card:hover {
+    background-color:  linear-gradient(45deg, var(--color-bg-3), transparent);
+}
+
+.Rec-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Rec-info {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 1; /* 让Rec-info填满剩余空间 */
+    margin-left: 1rem; /* 添加左右间距，与图片间隔开 */
+    box-sizing: border-box; /* 确保计算高度时包含内边距和边框 */  
+}
+
+.Rec-title {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #5753C7;
+    white-space: normal;
+}
+
+.Rec-description {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    color: var(--color-font-2);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    height: auto;
+    max-height: 3.375rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    white-space: wrap;
+    text-overflow: ellipsis; /* 显示省略号 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 指定显示几行 */
+    -webkit-box-orient: vertical;
+}
+
+.Rec-card:hover .Rec-description {
+    max-height: none;
+    margin-bottom: 0;
+}
+
+.hotness {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 0.15rem;
+}
+
+.Rec-card a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.Rec-card a:hover {
+    text-decoration: none;
+}
+
+/* 对于悬停时隐藏图片的效果，请根据需求选择性应用以下样式 */
+.Rec-card:hover img.Rec-image {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* 如果需要在悬停时移动内容区域 */
+.Rec-card:hover .Rec-info {
+    margin-left: -50px;
+    /* 可根据实际需求调整 */
+    transition: margin-left 0.3s ease-out;
+}
+
+@media (max-width: 600px) {
+    .Rec-card {
+        width: 95%;
+        margin-right: 0; /* 移除间距 */
+    }
+}

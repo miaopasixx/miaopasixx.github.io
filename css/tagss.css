@@ -64,15 +64,22 @@ margin: 10px auto; /* 调整短线与文字之间的距离 */
       color: #333;
     }
     .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 10px;
       max-height: 700px; /* 设置最大高度 */
       overflow-y: auto; /* 启用垂直滚动 */
     }
   
     .tag-cloud a {
-      display: block;
-      margin: 5px auto;
-      padding: 8px 12px;
+      display: inline-block;
+      margin: 5px;
+      padding: 6px 10px;
+      font-size: 14px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      max-width: 200px;
     }
   }
   
