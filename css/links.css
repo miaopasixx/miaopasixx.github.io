@@ -194,7 +194,31 @@
     border: 1px solid rgba(120, 127, 226, 0.185);
 }
 
+.Rec-lost-card {
+    position: relative;
+    width: 140px; 
+    max-width: 100%;
+    height: auto;
+    background-color: hsl(233deg 33% 36% / 11%);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(137, 146, 155, 0.075);
+    padding: 0.5rem;
+    flex-direction: row;
+    margin: 0 20px 20px; /* 保留20px的margin-right以增加间距 */
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    display: inline-flex;
+    justify-content: flex-start; /* 改为此处，让图像靠左对齐 */
+    align-items: center;
+    border: 1px solid rgba(120, 127, 226, 0.185);
+}
+
 .Rec-card:hover {
+    background-color:  linear-gradient(45deg, var(--color-bg-3), transparent);
+}
+
+.Rec-lost-card:hover {
     background-color:  linear-gradient(45deg, var(--color-bg-3), transparent);
 }
 
@@ -202,7 +226,14 @@
     width: 50px;
     height: 50px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20%;
+}
+
+.Rec-lost-image {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 20%;
 }
 
 .Rec-info {
@@ -214,9 +245,27 @@
     box-sizing: border-box; /* 确保计算高度时包含内边距和边框 */  
 }
 
+.Rec-lost-info {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    flex-grow: 1; /* 让Rec-info填满剩余空间 */
+    margin-left: 1rem; /* 添加左右间距，与图片间隔开 */
+    box-sizing: border-box; /* 确保计算高度时包含内边距和边框 */  
+}
+
 .Rec-title {
     margin: 0;
     font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #5753C7;
+    white-space: normal;
+}
+
+.Rec-lost-title {
+    margin: 0;
+    font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.5;
     color: #5753C7;
@@ -259,6 +308,13 @@
     text-decoration: none;
 }
 
+.Rec-lost-card a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
 .Rec-card a:hover {
     text-decoration: none;
 }
@@ -271,7 +327,20 @@
 
 /* 如果需要在悬停时移动内容区域 */
 .Rec-card:hover .Rec-info {
-    margin-left: -50px;
+    margin-left: -10px;
+    /* 可根据实际需求调整 */
+    transition: margin-left 0.3s ease-out;
+}
+
+/* 对于悬停时隐藏图片的效果，请根据需求选择性应用以下样式 */
+.Rec-lost-card:hover img.Rec-lost-image {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* 如果需要在悬停时移动内容区域 */
+.Rec-lost-card:hover .Rec-lost-info {
+    margin-left: -10px;
     /* 可根据实际需求调整 */
     transition: margin-left 0.3s ease-out;
 }
