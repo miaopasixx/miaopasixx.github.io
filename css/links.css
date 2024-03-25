@@ -185,7 +185,7 @@
     box-shadow: 0 2px 4px rgba(137, 146, 155, 0.075);
     padding: 0.5rem;
     flex-direction: row;
-    margin: 0 20px 20px; /* 保留20px的margin-right以增加间距 */
+    margin: 0 5px 20px; /* 保留20px的margin-right以增加间距 */
     overflow: hidden;
     transition: all 0.3s ease-out;
     display: inline-flex;
@@ -205,7 +205,7 @@
     box-shadow: 0 2px 4px rgba(137, 146, 155, 0.075);
     padding: 0.5rem;
     flex-direction: row;
-    margin: 0 20px 20px; /* 保留20px的margin-right以增加间距 */
+    margin: 0 5px 20px; /* 保留20px的margin-right以增加间距 */
     overflow: hidden;
     transition: all 0.3s ease-out;
     display: inline-flex;
@@ -327,7 +327,7 @@
 
 /* 如果需要在悬停时移动内容区域 */
 .Rec-card:hover .Rec-info {
-    margin-left: -10px;
+    margin-left: -42px;
     /* 可根据实际需求调整 */
     transition: margin-left 0.3s ease-out;
 }
@@ -340,7 +340,7 @@
 
 /* 如果需要在悬停时移动内容区域 */
 .Rec-lost-card:hover .Rec-lost-info {
-    margin-left: -10px;
+    margin-left: -25px;
     /* 可根据实际需求调整 */
     transition: margin-left 0.3s ease-out;
 }
