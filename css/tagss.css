@@ -17,7 +17,7 @@ text-align: center;
 
 .tag-cloud a::before {
 content: "\2022"; /* 使用实心圆点的 unicode 编码 */
-color: var(--color-red);; /* 设置圆点颜色为红色 */
+color: var(--color-red); /* 设置圆点颜色为红色 */
 margin-right: 5px; /* 调整圆点与文字之间的距离 */
 }
 
@@ -25,15 +25,15 @@ margin-right: 5px; /* 调整圆点与文字之间的距离 */
 margin: 5px;
 padding: 8px 15px;
 border-radius: 20px;
-background-color: #2d2e43;
-color: #fff;
+background-color: var(--color-label-bg);
+color: var(--color-label-font);
 text-decoration: none;
 transition: all 0.3s ease;
 border-radius: 10px;
 }
 
 .tag-cloud a:hover {
-background-color: #2d2e43;
+background-color: #3a3b412d;
 transform: scale(1.1);
 }
 
