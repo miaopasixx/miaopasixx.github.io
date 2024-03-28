@@ -159,7 +159,7 @@
 
 .links>.content ul .item .list {
     list-style: square;
-    padding-left: 24px
+    
 }
 
 .links>.content ul .item .list li {
@@ -178,7 +178,7 @@
     position: relative;
     width: calc(100% / 4); 
     max-width: 100%;
-    height: 130px;
+    height: 100px;
     background-color: hsl(233deg 33% 36% / 11%);
     border-radius: 4px;
     overflow: hidden;
@@ -299,6 +299,20 @@
     font-size: 0.8rem;
     color: #999;
     margin-top: 0.15rem;
+    display: none; /* 默认隐藏小标签 */
+    position: absolute; /* 设置绝对定位 */
+    top: 5px; /* 根据需要调整标签位置 */
+    right: 5px;
+    padding: 0px 2px;
+    background-color: hsl(233deg 33% 36% / 11%); /* 示例颜色，您可以自定义 */
+    font-size: 12px;
+    border-radius: 3px;
+    white-space: nowrap;
+    z-index: 1; /* 确保标签在卡片内容之上显示 */
+}
+
+.Rec-card:hover .hotness {
+    display: inline-block; /* 当鼠标悬停在卡片上时，显示小标签 */
 }
 
 .Rec-card a {
