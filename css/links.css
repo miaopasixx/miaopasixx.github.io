@@ -364,4 +364,51 @@
         width: 95%;
         margin-right: 0; /* 移除间距 */
     }
+
+    pre {
+        
+        margin-right: 0;
+    }
+}
+
+
+/* 自定义代码块的基本样式 */
+pre {
+    background-color: hsl(233deg 33% 36% / 11%);
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    width: 80%;
+}
+
+
+/* 针对.yml语法高亮的样式 */
+code.yml {
+    font-family: 'Consolas', 'Monaco', monospace;
+    color: #333;
+}
+
+/* 代码关键字高亮 */
+code.yml .keyword {
+    color: #c7254e;
+}
+
+/* 字面量字符串高亮 */
+code.yml .string {
+    color: #183691;
+}
+
+/* 注释高亮 */
+code.yml .comment {
+    color: var(--color-font-2);
+}
+
+/* 数字、布尔值等其他类型高亮 */
+code.yml .number, code.yml .boolean {
+    color: #a67f59;
+}
+
+/* 列表项高亮 */
+code.yml .list-item {
+    color: #183691;
 }
