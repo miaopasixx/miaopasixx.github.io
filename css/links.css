@@ -25,7 +25,13 @@
 .links {
     height: 100%;
     overflow-y: auto;
-    position: relative
+    position: relative;
+    scrollbar-width: none; /* 隐藏 Firefox 的滚动条 */
+    -ms-overflow-style: none; /* 隐藏 IE 和 Edge 的滚动条 */
+}
+
+.links::-webkit-scrollbar {
+    display: none; /* 隐藏 Webkit 浏览器（如 Chrome 和 Safari）的滚动条 */
 }
 
 .links .header {
@@ -378,14 +384,14 @@ pre {
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
-    width: 80%;
+    width: 75%;
 }
 
 
 /* 针对.yml语法高亮的样式 */
 code.yml {
     font-family: 'Consolas', 'Monaco', monospace;
-    color: #333;
+    color: var(--color-font-2);
 }
 
 /* 代码关键字高亮 */
@@ -400,7 +406,7 @@ code.yml .string {
 
 /* 注释高亮 */
 code.yml .comment {
-    color: var(--color-font-2);
+    color: #5753C7;
 }
 
 /* 数字、布尔值等其他类型高亮 */
