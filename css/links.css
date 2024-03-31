@@ -189,10 +189,9 @@
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(137, 146, 155, 0.075);
-    padding: 0.5rem;
+    padding: 0.35rem;
     flex-direction: row;
     margin: 0 5px 20px; /* 保留20px的margin-right以增加间距 */
-    overflow: hidden;
     transition: all 0.3s ease-out;
     display: inline-flex;
     justify-content: flex-start; /* 改为此处，让图像靠左对齐 */
@@ -202,17 +201,16 @@
 
 .Rec-lost-card {
     position: relative;
-    width: 140px; 
+    width: 146px; 
     max-width: 100%;
     height: auto;
     background-color: hsl(233deg 33% 36% / 11%);
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(137, 146, 155, 0.075);
-    padding: 0.5rem;
+    padding: 0.35rem;
     flex-direction: row;
     margin: 0 5px 20px; /* 保留20px的margin-right以增加间距 */
-    overflow: hidden;
     transition: all 0.3s ease-out;
     display: inline-flex;
     justify-content: flex-start; /* 改为此处，让图像靠左对齐 */
@@ -284,7 +282,6 @@
     color: var(--color-font-2);
     word-break: break-word;
     overflow-wrap: break-word;
-    text-overflow: ellipsis;
     height: auto;
     max-height: 3.375rem;
     overflow: hidden;
@@ -384,7 +381,7 @@ pre {
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
-    width: 75%;
+    width: 81%;
 }
 
 
