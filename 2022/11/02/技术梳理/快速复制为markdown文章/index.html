@@ -228,17 +228,17 @@
           <!-- 文章标题 -->
           <h1 class="post-title">快速复制为markdown文章</h1>
           <div class="last-updated">
-            上次更新: 2024-03-31 09:30:17
+            上次更新: 2024-04-04 15:36:03
           </div>
           <!-- 文章 -->
-          <h2 id="问题来源"><a href="#问题来源" class="headerlink" title="问题来源"></a>问题来源</h2><p>今天用cubox保存了CSDN网站中的文章</p>
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css" /><div class=".article-gallery"><h2 id="问题来源"><a href="#问题来源" class="headerlink" title="问题来源"></a>问题来源</h2><p>今天用cubox保存了CSDN网站中的文章</p>
 <p>进入cubox中右键此篇文章傻眼了</p>
 <p>如下图</p>
-<p><img src="https://pic4.zhimg.com/80/v2-75f8d01550acde60dcedf5dfd21970db_720w.webp"></p>
+<p><a target="_blank" rel="noopener" href="https://pic4.zhimg.com/80/v2-75f8d01550acde60dcedf5dfd21970db_720w.webp" class="gallery-item"><img src="https://pic4.zhimg.com/80/v2-75f8d01550acde60dcedf5dfd21970db_720w.webp"></a></p>
 <p>只有复制或导出为html选项</p>
 <p>保存的竟然是快照</p>
 <h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>一个很强大的插件【Copy as Markdown】</p>
-<p><img src="https://pic3.zhimg.com/80/v2-1ef501cc65f44130039b4d498f1d7f6e_720w.webp"></p>
+<p><a target="_blank" rel="noopener" href="https://pic3.zhimg.com/80/v2-1ef501cc65f44130039b4d498f1d7f6e_720w.webp" class="gallery-item"><img src="https://pic3.zhimg.com/80/v2-1ef501cc65f44130039b4d498f1d7f6e_720w.webp"></a></p>
 <ul>
 <li><p>在edge或者chrome浏览器安装此插件之后  </p>
 </li>
@@ -247,13 +247,18 @@
 <li><p>鼠标右键找到copy selection as markdown</p>
 </li>
 </ul>
-<p><img src="https://pic1.zhimg.com/80/v2-ffcba6a16ce3259c6ab670fbe683ed0c_720w.webp"></p>
+<p><a target="_blank" rel="noopener" href="https://pic1.zhimg.com/80/v2-ffcba6a16ce3259c6ab670fbe683ed0c_720w.webp" class="gallery-item"><img src="https://pic1.zhimg.com/80/v2-ffcba6a16ce3259c6ab670fbe683ed0c_720w.webp"></a></p>
 <ul>
 <li>然后粘贴到Obsidian中即可，很完美</li>
 </ul>
 <p><strong>Cubox+Copy as Markdown组合解决网页剪藏真心不错</strong></p>
 <p>END</p>
-
+</div><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-fullscreen.js@1.2.0/dist/lg-fullscreen.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.3.0/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-autoplay.js@1.2.0/dist/lg-autoplay.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-video.js@1.3.0/dist/lg-video.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-hash.js@1.0.0/dist/lg-hash.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-pager.js@1.0.0/dist/lg-pager.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
           <div class="post-tags">
             <!-- 文章tags -->
             
@@ -266,6 +271,18 @@
         </article>
         <!-- 评论 -->
         <div id="vcomments"></div>
+        
+          <div id="tcomment"></div>
+          <script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+          <script>
+          twikoo.init({
+            envId: 'https://twikoo.mpsxx.top/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+            el: '#tcomment', // 容器元素
+            // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+            // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+            // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+          })
+          </script>
         
       </div>
     </main>
