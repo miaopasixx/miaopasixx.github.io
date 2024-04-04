@@ -421,15 +421,35 @@
         这里插入一个代码块，展示示例：
         <pre><code class="yml">- name: Mr.Nyampasu
   link: https://blog.mpsxx.top/
-  avatar: http://localhost:4000/img/favicon.svg
+  avatar: https://blog.mpsxx.top/img/favicon.svg
   descr: 分享、学习、生活
 </code></pre>
       </li>
       
     </ul>
 
+    <!-- 评论 -->
+    
+      <div id="tcomment">
+        <script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+        <script>
+          twikoo.init({
+            envId: 'https://twikoo.mpsxx.top/',
+            el: '#tcomment',
+            // region: 'ap-guangzhou',
+            // path: location.pathname,
+            // lang: 'zh-CN'
+          })
+        </script>
+      </div>
+    
+    <!-- 评论结束 -->
+    
   </div>
 </div>
+
+
+
 
 
 <script src="/js/31d6cfe0.js"></script>
