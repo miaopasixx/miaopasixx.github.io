@@ -2,6 +2,13 @@
     max-width: 100%;
 }
 
+#world {
+    height: 100%;
+    top: 56px;
+    position: absolute; /* ���Ӷ�λ���� */
+    z-index: -1; /* ���ýϵ͵Ĳ��˳�� */
+}
+
 pre[class*=language-].line-numbers {
     counter-reset: linenumber;
     padding-left: 3.8em;
