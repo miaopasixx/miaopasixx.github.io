@@ -1,4 +1,3 @@
-//Ч��
 var Boid = function ( x, y, angle ) {
     this.x = x;
     this.y = y;
@@ -12,7 +11,7 @@ var Boid = function ( x, y, angle ) {
 
     this.update = function () {
 
-	    context.strokeStyle = '#575BAD3B';
+	    context.strokeStyle = '#575BAD21';
 	    context.beginPath();
 	    context.moveTo( this.x, this.y );
 
