@@ -1,6 +1,14 @@
+@font-face {
+    font-family: lg;
+    src: url(/font/lg.ttf?22t19m) format("truetype"), url(/font/lg.woff?22t19m) format("woff"), url(/font/lg.svg?22t19m#lg) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
 .lg-icon {
     font-family: lg !important;
-    speak: never;
+    speak-as: never;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -976,7 +984,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-item {
-    background: url(../img/loading.gif) center center no-repeat;
+    background: url(/img/loading.gif) center center no-repeat;
     display: none !important
 }
 
