@@ -13,7 +13,7 @@
     background-color: transparent;
     border: none;
     padding: 10px;
-    color: white;
+    color: var(--color-font);
     display: flex;
     position: relative;
     gap: 5px;
@@ -24,12 +24,12 @@
 
 .value:not(:active):hover,
 .value:focus {
-    background-color: #21262c;
+    background-color: #21262c81;
 }
 
 .value:focus,
 .value:active {
-    background-color: #1a1f24;
+    background-color: #1a1f2462;
     outline: none;
 }
 
@@ -55,6 +55,9 @@
 }
 
 /*以上是新增代码 详见https://uiverse.io/BiliBC034/wonderful-lizard-53*/
+
+
+
 
 /* 筛选表单整体样式 */
 #filter-form {
