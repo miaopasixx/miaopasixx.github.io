@@ -7,9 +7,24 @@
     justify-content: flex-start;
     border-radius: 5px;
     align-items: center;
+    max-width: 100%;
+    min-width: 20px; /* 调整此值以适应实际需求 */
+    position: relative; /* 新增 */
+    touch-action: pan-x;
+    -ms-touch-action: pan-x;
+    cursor: grab;
+}
+
+.input-scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
 }
 
 .value {
+    flex: 1 1 auto; 
     background-color: transparent;
     border: none;
     padding: 10px;
@@ -20,6 +35,7 @@
     cursor: pointer;
     border-radius: 4px;
     margin: 0 10px 0 10px;
+    max-height: 37px;
 }
 
 .value:not(:active):hover,
