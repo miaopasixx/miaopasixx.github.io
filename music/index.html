@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    「喵」思录 - music
+    「喵」思录 - 音乐台
   </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -110,6 +110,11 @@
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20"><g fill="none"><path d="M9.384 2a1 1 0 0 0-.966.742L4.616 17H2.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-2.116L11.582 2.742A1 1 0 0 0 10.616 2H9.384zM5.651 17l.8-3H11.5a.5.5 0 0 0 0-1H6.717l.534-2H10.5a.5.5 0 0 0 0-1H7.517l1.867-7h1.232l3.733 14H5.651z" fill="currentColor"></path></g></svg>
           <div class="ellipsis">路线图</div>
         </a>
+      </li><li data-path="music">
+        <a href="/music">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path d="M15 6H3v2h12V6zm0 4H3v2h12v-2zM3 16h8v-2H3v2zM17 6v8.18c-.31-.11-.65-.18-1-.18c-1.66 0-3 1.34-3 3s1.34 3 3 3s3-1.34 3-3V8h3V6h-5z" fill="currentColor"></path></svg>
+          <div class="ellipsis">音乐台</div>
+        </a>
       </li><li data-path="travellings">
         <a href="/travellings">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"><path d="M27.303 2a2.661 2.661 0 0 0-1.908.806l-.393.405l-.397-.405a2.661 2.661 0 0 0-3.816 0a2.8 2.8 0 0 0 0 3.896L25.002 11l4.209-4.298a2.8 2.8 0 0 0 0-3.896A2.661 2.661 0 0 0 27.303 2z" fill="currentColor"></path><path d="M22 13v3H6v-6h9V8H6.184A2.995 2.995 0 0 1 9 6h6V4H9a5.006 5.006 0 0 0-5 5v12a4.99 4.99 0 0 0 3.582 4.77L5.769 30h2.176l1.714-4h8.682l1.714 4h2.176l-1.813-4.23A4.99 4.99 0 0 0 24 21v-8zm0 7h-3v2h2.816A2.995 2.995 0 0 1 19 24H9a2.995 2.995 0 0 1-2.816-2H9v-2H6v-2h16z" fill="currentColor"></path></svg>
@@ -202,7 +207,7 @@
       </g>
     </svg>
     <span class="ellipsis">
-      「喵」思录 - music
+      「喵」思录 - 音乐台
     </span>
     
   </section>
@@ -222,21 +227,133 @@
         <!-- 渲染文章内容 -->
         <article>
           <!-- 文章标题 -->
-          <h1 class="post-title">「喵」思录 - music</h1>
+          <h1 class="post-title">「喵」思录 - 音乐台</h1>
           <div class="last-updated">
-            上次更新: 2024-04-09 21:51:27
+            上次更新: 2024-08-06 04:19:38
           </div>
           <!-- 文章 -->
-          <link rel="stylesheet" type="text/css" href="/js/lg/lightgallery.min.css" /><div class=".article-gallery"><link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css"><!--APlayer的样式-->
-<script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script><!--APlayer的依赖-->
-<script src="https://unpkg.com/meting@2/dist/Meting.min.js"></script><!--Meting的依赖-->
-<meting-js
-    server="netease"
-    type="playlist"
-    autoplay=false 
-    lrc-type=3
-    id="7893371839"> 
-</meting-js> </div><script src="/js/lg/lightgallery.min.js"></script><script src="/js/lg/lg-thumbnail.min.js"></script><script src="/js/lg//lg-fullscreen.min.js"></script><script src="/js/lg/lg-zoom.min.js"></script><script src="/js/lg/lg-autoplay.min.js"></script><script src="/js/lg/lg-video.min.js"></script><script src="/js/lg/lg-hash.min.js"></script><script src="/js/lg/lg-pager.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><link rel="stylesheet" type="text/css" href="/js/lg/lightgallery.min.css" /><div class=".article-gallery"><style>
+/* 样式部分 */
+
+.tab-buttons button {
+    color: var(--color-font);
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-buttons button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab-buttons button.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px 0;
+    height: 100%; /* Tab内容高度自适应 */
+    overflow-y: auto; /* 如果内容超过容器则显示滚动条 */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 保持原来的APlayer样式 */
+.aplayer .aplayer-pic {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.aplayer .aplayer-list ol {
+    margin-left: 100px !important;
+}
+
+.aplayer.aplayer-withlist .aplayer-info {
+    border-bottom: 1px solid #FFFFFF00 !important;
+}
+
+.aplayer,
+.aplayer .aplayer-info {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.aplayer .aplayer-lrc:after,
+.aplayer .aplayer-lrc:before {
+    background: transparent !important;
+}
+
+.aplayer .aplayer-list ol li.aplayer-list-light {
+    background: #e9e9e91f !important;
+}
+
+.aplayer .aplayer-list ol li:hover {
+    background: #e9e9e91f !important;
+}
+
+.aplayer .aplayer-list ol li {
+    border-top: 1px solid #E9E9E917 !important;
+}
+
+.aplayer.aplayer-withlrc .aplayer-info {
+    margin-bottom: 20px !important;
+}
+</style>
+
+<!-- 引入APlayer和Meting的样式和依赖 -->
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<!-- Meting.js 用于加载网易云音乐播放列表 -->
+
+<div class="tabs">
+    <div class="tab-buttons">
+        <button class="tab-link active" data-tab="tab1">猜你喜欢</button>
+        <button class="tab-link" data-tab="tab2">传承经典</button>
+    </div>
+    <div id="tab1" class="tab-content active">
+        <meting-js server="netease" type="playlist" id="129627424" list-max-height="600px"></meting-js>
+    </div>
+    <div id="tab2" class="tab-content">
+        <meting-js server="netease" type="playlist" id="60198" list-max-height="600px"></meting-js>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var tabLinks = document.querySelectorAll('.tab-link');
+    var tabContents = document.querySelectorAll('.tab-content');
+
+    tabLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var tabId = this.getAttribute('data-tab');
+
+            tabLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            tabContents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+
+            document.getElementById(tabId).classList.add('active');
+            this.classList.add('active');
+        });
+    });
+});
+</script></div><script src="/js/lg/lightgallery.min.js"></script><script src="/js/lg/lg-thumbnail.min.js"></script><script src="/js/lg//lg-fullscreen.min.js"></script><script src="/js/lg/lg-zoom.min.js"></script><script src="/js/lg/lg-autoplay.min.js"></script><script src="/js/lg/lg-video.min.js"></script><script src="/js/lg/lg-hash.min.js"></script><script src="/js/lg/lg-pager.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
         };
@@ -250,18 +367,6 @@
         </article>
         <!-- 评论 -->
         <div id="vcomments"></div>
-        
-          <div id="tcomment"></div>
-          <script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
-          <script>
-          twikoo.init({
-            envId: 'https://twikoo.mpsxx.top/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
-            el: '#tcomment', // 容器元素
-            // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
-            // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
-            // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
-          })
-          </script>
         
       </div>
     </main>
